@@ -1,0 +1,19 @@
+<head>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <a href="/">Home</a>
+    <a href="/surveyoperation/new">Add New Entry</a>
+  
+    <h1>Survey Operations List</h1>
+    <ul>
+        <% surveyOperations.forEach(ele => {%>
+                    
+           <a href="/surveyoperation/<%=ele._id%>">
+               <li><%=ele.name%></li>
+           </a>
+
+        <%})%>
+    </ul>
+
+</body>

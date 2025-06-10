@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=surveyOp.name%></title>
+</head>
+<body>
+    <h1>Edit <%=surveyOp.name%> </h1>
+    <form action="/surveyoperation/<%=surveyOp._id%>?_method=PUT" method="POST">
+
+       <label for="name">Survey Operation Name:</label>
+        <input type="text" name="name" id="name" value="<%=surveyOp.name%>">
+        <br>
+        <br>
+        <label for="type">Type of Survey:</label>
+        <input type="text" name="type" id="type" value="<%=surveyOp.type%>">
+        <br>
+        <br>
+        <label for="year">start (Year):</label>
+        <input type="number" name="year" id="year" value="<%=surveyOp.year%>">
+        <br>
+        <br>
+        <label for="location">Location:</label>
+        <input type="text" name="location" id="location" value="<%=surveyOp.location%>">
+        <br>
+        <br>
+        <label for="sensor">Type of Sensor:</label>
+        <input type="text" name="sensor" id="sensor" value="<%=surveyOp.sensor%>">
+        <br>
+        <br>
+        <label for="progress">Survey Progress %:</label>
+        <input type="number" name="progress" id="progress" value="<%=surveyOp.progress%>">
+        <br>
+        <br>
+        <button type="submit">Update Survey Operation for <%=surveyOp.name%> </button>
+
+    </form>
+</body>
+</html>

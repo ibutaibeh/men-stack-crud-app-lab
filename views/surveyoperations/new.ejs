@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Entry Form</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <a href="/surveyoperation">Back</a>
+    <h1>Create New Entry</h1>
+    <form action="/surveyoperation" method="post">
+        <label for="name">Survey Operation Name:</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <br>
+        <label for="type">Type of Survey:</label>
+        <input type="text" name="type" id="type">
+        <br>
+        <br>
+        <label for="year">Start (Year):</label>
+        <input type="number" name="year" id="year">
+        <br>
+        <br>
+        <label for="location">Location:</label>
+        <input type="text" name="location" id="location">
+        <br>
+        <br>
+        <label for="sensor">Type of Sensor:</label>
+        <input type="text" name="sensor" id="sensor">
+        <br>
+        <br>
+        <label for="progress">Survey Progress %:</label>
+        <input type="number" name="progress" id="progress">
+        <br>
+        <br>
+        <button type="submit">Add Survey Operation</button>
+
+    </form>
+</body>
+</html>

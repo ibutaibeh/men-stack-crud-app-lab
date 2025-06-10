@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=surveyOp.name%></title>
+</head>
+<body>
+<a href="/surveyoperation">Back</a>
+    <h1><%=surveyOp.name%></h1>
+<ul>
+<li>Project Type:<%=surveyOp.type%></li>
+<li>Start Year:<%=surveyOp.year%></li>
+<li>Location: <%=surveyOp.location%></li>
+<li>Type of Sensor used: <%=surveyOp.sensor%></li>
+<li>Survey Progress: <%=surveyOp.progress%>%</li>
+
+</ul>
+
+
+    <a href="/surveyoperation/<%=surveyOp._id%>/edit">Edit</a>
+<br>
+
+<form action="/surveyoperation/<%=surveyOp._id%>?_method=DELETE" method="POST">
+    <button type="submit">Delete <%=surveyOp.name%></button>
+</form>
+</body>
+</html>
